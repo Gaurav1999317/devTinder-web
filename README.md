@@ -1,8 +1,8 @@
-# React + Vite
+#devTinder
+-Created a vite +react project
+-npm init command to install node modules
+-Removed unnnecessary code and create a hello world app
+-install tailwind css
+-install Daisy Ui
+-Add Navbar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
