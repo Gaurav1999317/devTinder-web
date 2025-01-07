@@ -9,5 +9,11 @@
 -Create basic routing using browserRouter ,Routes and Route
 -Create Footer
 -create a Login page
+-install axios
+-install redux toolkit
+-install react redux also
+-COnfigure the store for redux
+-navbar should update as soon as the user logs in\
+-
 
 
