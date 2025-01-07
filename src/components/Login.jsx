@@ -9,6 +9,7 @@ import { API_URL, login_endpoint } from "../utils/constants";
 
 const Login = () => {
   const dispatch=useDispatch();
+  const [error ,setError]=useState("");
   const [emailId,setEmailId]=useState("gaurav@gmail.com");
   const [password,setPassword]=useState("Gaurav@123");
   const navigate=useNavigate();
@@ -25,7 +26,8 @@ const Login = () => {
     navigate("/");
 
    }catch(error){
-    console.dir(error)
+    setError(error?.response?.data||"Something went wrong!")
+    console.error(error)
    }
   };
 
@@ -56,7 +58,9 @@ const Login = () => {
        className="input input-bordered w-full max-w-xs" /> 
       </label>
       </div>
+      <p className="text-red-600">{error}</p>
       <div className="card-actions justify-center">
+        
         <button
         onClick={()=>{handleLogin()}}
         className="btn btn-primary">Login</button>
