@@ -9,8 +9,8 @@ import { API_URL, login_endpoint } from "../utils/constants";
 
 const Login = () => {
   const dispatch=useDispatch();
-  const [emailId,setEmailId]=useState("");
-  const [password,setPassword]=useState("");
+  const [emailId,setEmailId]=useState("gaurav@gmail.com");
+  const [password,setPassword]=useState("Gaurav@123");
   const navigate=useNavigate();
   const handleLogin=async()=>{
    try{

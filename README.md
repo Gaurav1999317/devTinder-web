@@ -14,6 +14,7 @@
 -install react redux also
 -COnfigure the store for redux
 -navbar should update as soon as the user logs in\
--
+-you should not access the other routes without login
+-if token is not present redirect to the login page
 
 
