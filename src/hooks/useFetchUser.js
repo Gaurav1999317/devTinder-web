@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 
 const useFetchUser = () => {
     const userData=useSelector(store=>store.user)
+    
     const navigate=useNavigate();
     const dispatch=useDispatch()
     const fetchUser=async()=>{
@@ -15,8 +16,8 @@ const useFetchUser = () => {
         const res=await axios.get(API_URL+profile_endpoint,
             {withCredentials:true}
         );
-       
-      dispatch(addUser(res));
+      
+      dispatch(addUser(res.data));
       }catch(error)
       { if(error.status==401)
         navigate("/login")

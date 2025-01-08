@@ -18,5 +18,7 @@
 -if token is not present redirect to the login page
 -Showed the feed toh the user after loggin in
 -Made the user Card for showing the diff user details
+-profile edit and showing the changes real time
+-toast message for data edited succesfully
 
 
