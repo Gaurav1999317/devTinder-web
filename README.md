@@ -16,5 +16,7 @@
 -navbar should update as soon as the user logs in\
 -you should not access the other routes without login
 -if token is not present redirect to the login page
+-Showed the feed toh the user after loggin in
+-Made the user Card for showing the diff user details
 
 
