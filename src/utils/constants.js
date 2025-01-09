@@ -5,3 +5,7 @@ export const logout_endpoint="/logout";
 export const feed_endpoint="/feed";
 export const profileEdit_endpoint="/profile/edit";
 export const getConnections="/user/connections";
+export const getRequests="/user/requests/received";
+
+export const requestReview="/request/review/";
+export const sendRequest="/requests/send/";

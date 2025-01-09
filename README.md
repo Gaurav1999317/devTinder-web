@@ -20,5 +20,9 @@
 -Made the user Card for showing the diff user details
 -profile edit and showing the changes real time
 -toast message for data edited succesfully
+-New Page- to show all the Connections
+-New Page - to see all connection request
+-feature-accept/reject Connection Request
+-Send/ignoire the user Card from the feed
 
 

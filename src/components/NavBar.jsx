@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { API_URL, logout_endpoint } from "../utils/constants";
 import axios from "axios";
 import { removeUser } from "../utils/userSlice";
+import { removeFeed } from "../utils/feedSlice";
 
 
 const NavBar = () => {
@@ -10,10 +11,11 @@ const NavBar = () => {
   const dispatch=useDispatch();
   const navigate=useNavigate()
   const handleLogout=async()=>{
-    console.log("logput called!!")
+    console.log("logout called!!")
     try{
       await axios.post(API_URL+logout_endpoint,{},{withCredentials:true})
       dispatch(removeUser())
+      dispatch(removeFeed());
       navigate("/login");
     }catch(err){
       console.log(err)
@@ -49,6 +51,9 @@ const NavBar = () => {
           </li>
           <li>
           <Link to ="/connections">Connections</Link>
+          </li>
+          <li>
+          <Link to ="/requests">Requests</Link>
           </li>
           <li><a onClick={handleLogout}>Logout</a></li>
         </ul>
