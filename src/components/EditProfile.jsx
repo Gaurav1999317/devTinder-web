@@ -28,11 +28,7 @@ const EditProfile = ({ user }) => {
                     about:about
                 },{
                     withCredentials:true,
-                    headers: {
-                        "Content-Type": "application/json", // Ensure proper headers
-                      },
-                });
-            console.log(res.data.data)    
+                });   
             dispatch(addUser(res.data.data));
             setShowToast(true);
             setTimeout(()=>{setShowToast(false)},3000)
