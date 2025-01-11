@@ -1,4 +1,4 @@
-export const API_URL="/api";
+export const API_URL=location.hostname==="localhost"?"http://localhost:7777":"/api";
 export const login_endpoint="/login";
 export const profile_endpoint="/profile/view";
 export const logout_endpoint="/logout";

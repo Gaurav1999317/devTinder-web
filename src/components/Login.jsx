@@ -44,8 +44,9 @@ const Login = () => {
     navigate("/");
 
    }catch(error){
+    
     setError(error?.response?.data||"Something went wrong!")
-    console.error(error)
+    
    }
   };
 

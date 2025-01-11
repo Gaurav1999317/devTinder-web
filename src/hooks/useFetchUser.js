@@ -21,7 +21,7 @@ const useFetchUser = () => {
       }catch(error)
       { if(error.status==401)
         navigate("/login")
-        console.error(error);
+        
       }
     }
     
