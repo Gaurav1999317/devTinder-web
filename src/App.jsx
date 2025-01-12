@@ -7,6 +7,9 @@ import appStore from "./utils/appStore"
 import Feed from "./components/Feed"
 import Connections from "./components/Connections"
 import Request from "./components/Request"
+import Privacy from "./components/Privacy"
+import TermsAndConditions from "./components/Terms"
+import RefundPolicy from "./components/RefundPolicy"
 
 
 
@@ -25,6 +28,9 @@ function App() {
         <Route path ="/profile" element={<Profile/>}/>
         <Route path ="/connections" element={<Connections/>}/>
         <Route path ="/requests" element={<Request/>}/>
+        <Route path ="/privacy" element={<Privacy/>}/>
+        <Route path ="/termsandcondition" element={<TermsAndConditions/>}/>
+        <Route path ="/refund" element={<RefundPolicy/>}/>
         </Route>
         </Routes>
       </BrowserRouter> 
