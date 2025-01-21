@@ -78,7 +78,7 @@ const Login = () => {
       </label></>}
       <label className="form-control w-full max-w-xs pt-4">
       <div className="label">
-        <span className="label-text">Email ID:{emailId}</span>  
+        <span className="label-text">Email ID</span>  
       </div>
       <input
        type="text" 
