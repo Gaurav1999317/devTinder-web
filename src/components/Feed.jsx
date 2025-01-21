@@ -15,7 +15,6 @@ const Feed = () => {
     if(feedData)return 
     try{
       const res= await axios.get(API_URL+feed_endpoint,{withCredentials:true});
-      console.log(res.data.data)
     dispatch(addFeed(res.data.data));
     }catch(error){
       console.log(error)

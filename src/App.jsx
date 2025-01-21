@@ -10,6 +10,7 @@ import Request from "./components/Request"
 import Privacy from "./components/Privacy"
 import TermsAndConditions from "./components/Terms"
 import RefundPolicy from "./components/RefundPolicy"
+import Chat from "./components/Chat"
 
 
 
@@ -31,6 +32,7 @@ function App() {
         <Route path ="/privacy" element={<Privacy/>}/>
         <Route path ="/termsandcondition" element={<TermsAndConditions/>}/>
         <Route path ="/refund" element={<RefundPolicy/>}/>
+        <Route path ="/chat/:targetUserId" element={<Chat/>}/>
         </Route>
         </Routes>
       </BrowserRouter> 
